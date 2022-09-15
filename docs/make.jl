@@ -11,5 +11,5 @@ makedocs(
 )
 
     deploydocs(
-        repo = "github.com/Hirlam/ModelDocumentation.git",
+        repo = "github.com/roelstappers/ModelDocumentation.git",
     )
