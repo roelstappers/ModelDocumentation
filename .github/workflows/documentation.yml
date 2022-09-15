@@ -13,9 +13,6 @@ jobs:
       - uses: julia-actions/setup-julia@latest
         with:
           version: '1.6'
-      - uses: ts-graphviz/setup-graphviz@v1
-      - name: Create da_graph       
-        run: dot -Tsvg docs/src/assets/da_graph.dot -o docs/src/assets/da_graph.svg
       - name: Install Julia dependencies
         run: julia --project=docs/ -e 'using Pkg; Pkg.instantiate()'
       - name: Build and deploy
